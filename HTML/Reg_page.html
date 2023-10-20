@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../CSS/Style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:ital,wght@1,500&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="../ICONS/icons8-bus-96.png" type="image/x-icon">
+    <title>Reg</title>
+</head>
+<body>
+    <header class="header">
+        <div class="wraper">
+            <div class="header_wrapper">
+                <div class="header_logo">
+                    <a href="./Main_page.html">
+                        <div class="logo">
+                            <img src="../ICONS/icons8-bus-96.png" alt="logo">
+                            <br>
+                            <div class="txt_logo">
+                               Versailles travel agency
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <nav class="header_nav">
+                    <ul class="header_list">
+                        <li class="header_item">
+                            <a class="header_link" href="./Main_page.html">Подорожі</a>
+                        </li>
+                        <li class="header_item">
+                            <a class="header_link" href="./Calendar_page.html">Календар</a>
+                        </li>
+                        <li class="header_item">
+                            <a class="header_link" href="./Contract_page.html">Договір</a>
+                        </li>
+                        <li class="header_item">
+                            <a class="header_link" href="./Contact_page.html">Контакти</a>
+                        </li>
+                        <li class="header_item">
+                            <img src="../ICONS/reg.png" alt="reg">
+                        </li>
+                        <li class="header_item">
+                            
+                            <a class="header_link" href="./Reg_page.html">Реєстрація</a>
+                        </li>
+                        <li class="header_item">
+                            <a class="header_link" href="./Auth_page.html">Увійти</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+     </header>
+     <script src="../JAVASCRIPT/Script_reg_auth.js"></script>
+     <main class="main">
+        <div class="login_main_reg">
+            <div class="register">
+                <h1>Реєстрація</h1>
+                <div class="columns">
+                    <div class="column">
+                        <div class="content">
+                            <label for="name">Ім'я</label>
+                            <input class="form_input" name="name" type="text" placeholder="Ваше ім'я">
+                        </div>
+                        <div class="content">
+                            <label for="second_name">Прізвище</label>
+                            <input class="form_input" name="second_name" type="text" placeholder="Ваше прізвище">
+                        </div>
+                        <div class="content">
+                            <label for="phone_number">Номер телефону</label>
+                            <input class="form_input" type="tel" placeholder="+380" name="phone_number">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <label for="email">Email</label>
+                            <input class="form_input" type="email" placeholder="Email" name="email">
+                        </div>
+                        <div class="content">
+                            <label for="password">Пароль</label>
+                            <div class="password-input-container">
+                                <input class="form_input" type="password" placeholder="Введіть пароль" name="password" id="passwordInput">
+                                <span id="showPassword" class="password-toggle" style="cursor: pointer;"><img src="../ICONS/eye-off.svg" alt="showPassword"></span>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <label for="repeat_password">Повторіть пароль</label>
+                            <div class="password-input-container">
+                                <input class="form_input" type="password" placeholder="Введіть ще раз пароль" name="repeat_password" id="repeatPasswordInput">
+                                <span id="showRepeatPassword" class="password-toggle" style="cursor: pointer;"><img src="../ICONS/eye-off.svg" alt="showPassword"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn">
+                    <input class="form_button_reg" type="submit" value="Увійти">
+                </div>
+            </div>
+        </div>
+    </main>  
+    <script src="../JAVASCRIPT/Script_show_password.js"></script>  
+    <footer class="footer">
+        <div class="footer_conten">
+            <div class="footer-column">
+                <h1>Графік роботи</h1>
+                <ul class="footer_list">
+                    <li>Пн. - Пт. 10.00 - 20.00</li>
+                    <li>Сб. - Нд. 10.00 - 17.00</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h1>Телефони</h1>
+                <ul class="footer_list">
+                    <li>+380 66 66 66 66</li>
+                    <li>+380 66 66 66 66</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h1>Адреса</h1>
+                <ul class="footer_list">
+                    <li>Україна</li>
+                    <li>Коломия</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__">
+            <span class="footer_end">© 2011 - 2023 | Всі права захищено.</span>
+        </div>
+    </footer>
+</body>
+</html>
