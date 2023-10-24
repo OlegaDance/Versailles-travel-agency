@@ -311,41 +311,7 @@ body{
     color: black;
 }
 
-/*----------------*/
-/*---Стилі Footer---*/
-/*----------------*/
-.footer{
-    background-color: black;
-    color:#D5CE50;
-    width: auto;
-    height: 200px;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-}
-.footer_conten {
-    font-size: 14px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px; 
-}
-.footer-column {
-    text-align: center; 
-}
-.footer_list{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
 
-.footer_end {
-    margin-top: auto; 
-    text-align: center; 
-}
-.footer__{
-    margin-top: 75px;
-}
 /*----------------*/
 /*---Стилі travel_page(main_page---*/
 /*----------------*/
@@ -590,43 +556,50 @@ body{
 /*----------------*/
 /*---Стилі Travel_info---*/
 /*----------------*/
-.Main_travel_info{
-    width: 1300px;
-    height: 768px;
-    background-image: url(../PHOTO/Rectangle\ 3.png);
-    margin-left: auto;
-    margin-right: auto;
-    align-items: end;
+.Travel_page{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    display: block;
 }
-.travel_info{
-    background-color: black;
-    width: 883px;
-    height: 768px;
-    opacity: 0.8;
-    text-align: center;
-    margin-left: 418px;
-    border-radius: 20px;
+.Travel_photo{
+    background-color: yellow;
+    width: 1352px;
+    height: 600px;
     border: none;
-    font-size: 32px;
-    margin-top: 50px;
-}
-.travel_information_tour{
+    border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    margin: 15px;
-    padding: 0;
+    justify-content:end; 
+}
+.Travel_info{
+    width: 800px;
+    height: 600px;
+    background-color: black;
+    opacity: 0.7;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+}
+.Travel_txt{
+    padding: 20px;
+    display: block;
+    color: white;
+    opacity: 0.9;
     margin-top: 50px;
 }
-
-.take_ticket{
-    margin-top: 50px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 350px;
-    height: 100px;
+.price_column {
+    display: flex;
+}
+.price_column, .column {
+    margin: 10px; 
+}
+.text{
+    color: red;
+}
+.Order_tour{
+    width: 208px;
+    height: 50px;
     color: white;
     text-align: center;
     font-size: 14px;
@@ -635,4 +608,39 @@ body{
     border-radius: 20px;
     cursor: pointer;
     outline: none;
+}
+/*----------------*/
+/*---Стилі Footer---*/
+/*----------------*/
+.footer{
+    background-color: black;
+    color:#D5CE50;
+    width: auto;
+    height: 200px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.footer_conten {
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+}
+.footer-column {
+    text-align: center; 
+}
+.footer_list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer_end {
+    margin-top: auto; 
+    text-align: center; 
+}
+.footer__{
+    margin-top: 75px;
 }

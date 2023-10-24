@@ -8,23 +8,23 @@ let currentDate = new Date();
 let selectedDate = currentDate;
 
 function renderCalendar() {
-    // Очищаємо календар і список подій
+    
     calendarDays.innerHTML = '';
     eventList.innerHTML = '';
 
-    // Визначаємо перший день поточного місяця
+    
     const firstDay = new Date(currentDate.getFullYear(), currentDate.getMonth(), 1);
     const lastDay = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 0);
     
     monthYear.textContent = `${currentDate.toLocaleString('uk-UA', { month: 'long' })} ${currentDate.getFullYear()}`;
 
-    // Додаємо дні місяця в календар
+   
     for (let i = 1; i <= lastDay.getDate(); i++) {
         const day = document.createElement('div');
         day.classList.add('calendar-day');
         day.textContent = i;
 
-        // Додаємо обробник події на клік
+      
         day.addEventListener('click', () => selectDate(new Date(currentDate.getFullYear(), currentDate.getMonth(), i)));
 
         calendarDays.appendChild(day);
@@ -53,6 +53,4 @@ function nextMonth() {
 
 prevMonthButton.addEventListener('click', prevMonth);
 nextMonthButton.addEventListener('click', nextMonth);
-
-// Початкова ініціалізація календаря
 renderCalendar();
