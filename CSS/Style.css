@@ -614,6 +614,13 @@ input {
 }
 .footer-column {
     text-align: center; 
+    margin-top: 50px;
+}
+.footer-column h1 {
+    font-size: 14px; 
+}
+.footer-column:nth-child(3) {
+    margin-right: 90px;
 }
 .footer_list{
     list-style-type: none;
@@ -626,5 +633,5 @@ input {
     text-align: center; 
 }
 .footer__{
-    margin-top: 75px;
+    margin-top: 60px;
 }
