@@ -102,6 +102,9 @@ body{
 /*----------------*/
 /*---Стилі авторизації---*/
 /*----------------*/
+.main_login{
+    margin-top: 50px;
+}
 button {
 	border-radius: 20px;
 	border: 1px solid #D5CE50;
@@ -163,9 +166,10 @@ input {
 }
 .container, a{
     text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
     
 }
-
 .form-container {
 	position: absolute;
 	top: 0;
@@ -279,7 +283,6 @@ input {
 .social-container {
 	margin: 20px 0;
 }
-
 .social-container a {
 	border: 1px solid #DDDDDD;
 	border-radius: 50%;
@@ -290,58 +293,9 @@ input {
 	height: 40px;
 	width: 40px;
 }
-
-
-
-/*----------------*/
-/*---Стилі реєстрації---*/
-/*----------------*/
-.btn_reg {
-    width: 208px;
-    height: 50px;
-    margin-left: 20px;
-}
-.register{
-    padding: 20px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    font-size: 16px;
-    background-color: #E6EAFF;
-    border: none ;
-    width: 700px;
-    height: 500px;
-}
-.register h1 {
- text-align: center;
- color: black;
-}
-.columns {
-    display: flex;
-    justify-content: space-between;
-}
-.column {
-    flex: 1;
-}
-.register .content {
-    padding: 10px; 
-}
-.form_button_reg {
-    text-align: center;
-   margin-left: 250px;
-}
-.content label::after {
-    content: " *";
-    color: red;
-}
-.content{
-    color: black;
-}
-
-
 /*----------------*/
 /*---Стилі travel_page(main_page---*/
 /*----------------*/
-
 .travel_info_main_page{
     margin-top: 50px;
     align-items: center;
@@ -380,6 +334,7 @@ input {
     width: 545.398px;
     height: 400px;
     transition: transform 0.3s ease;
+    margin-left: 20px;
 }
 
 .test_container {
@@ -619,6 +574,9 @@ input {
 }
 .price_column, .column {
     margin: 10px; 
+}
+.column{
+    margin-left: 75px ;
 }
 .text{
     color: red;
