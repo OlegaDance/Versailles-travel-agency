@@ -46,10 +46,6 @@
                         <img src="../ICONS/reg.png" alt="reg">
                     </li>
                     <li class="header_item">
-                        
-                        <a class="header_link" href="./Reg_page.html">Реєстрація</a>
-                    </li>
-                    <li class="header_item">
                         <a class="header_link" href="./Auth_page.html">Увійти</a>
                     </li>
                 </ul>
@@ -58,38 +54,44 @@
     </div>
  </header>
  <script src="../JAVASCRIPT/Script_reg_auth.js"></script>
- <main class="main">
-    <div class="login_main">
-        <div class="login">
-            <h1>Логін</h1>
-            <form class="form_login">
-                <div class="login_content">
-                    <label for="email">Email</label>
-                    <input class="form_input" name="email" type="email" placeholder="Ваша почта">
-                </div>
-                <div class="content">
-                    <label for="password">Пароль</label>
-                    <div class="password-input-container">
-                        <input class="form_input" name="password" type="password" placeholder="Введіть пароль" id="passwordInput">
-                        <span id="showPassword" class="password-toggle" style="cursor: pointer;"><img src="../ICONS/eye-off.svg" alt="showPassword"></span>
-                    </div>
-                </div>
-                <div class="btn">
-                    <input class="form_button" type="submit" value="Увійти">
-                    <p style="color: #000; margin-left: 23px;"> <a href="#" style="text-decoration: none; color: #000;">Забули свій пароль</a>?</p>
-                </div>
+ <div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="#">
+			<h1 style="color: black;">Створити акаунт</h1>
+			<input type="text" placeholder="Name" />
+			<input type="email" placeholder="Email" />
+			<input type="password" placeholder="Password" />
+			<button>Sign Up</button>
+		</form>
+	</div>
+    <main class="main_login">
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1 style="color: black;">Увійти</h1>
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <a href="#">Забули свій пароль?</a>
+                <button>Sign In</button>
             </form>
         </div>
-        <div class="non_acc">
-            <div class="creat_acc">
-                <h1>Не зареєстровані?</h1>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>З поверненням!</h1>
+                    <p>Щоб залишатися на зв'язку з нами, увійдіть,
+                        <br> використовуючи свої дані</p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Привіт друже!</h1>
+                    <p>Введіть свої дані та продовжуйте подорож з нами</p>
+                    <button class="ghost" id="signUp">Sign Up</button>
+                </div>
             </div>
-            <div class="btn_reg">
-                <input id="createAccountButton" class="button" type="submit" value="Створити новий акаунт">
-            </div>
-        </div> 
+        </div>
     </div>
-</main>
+    </main>
+<script src="../JAVASCRIPT/Auth_regScript.js"></script>
 <script src="../JAVASCRIPT/Sciripts.js"></script>
 <script src="../JAVASCRIPT/Script_show_password.js"></script>
 <footer class="footer">
