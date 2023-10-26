@@ -413,42 +413,70 @@ input {
 /*----------------*/
 /*---Стилі Contact_page---*/
 /*----------------*/
-.contact_page{
-    margin-top: 50px;
-    display: flex;
+.container_contact{
 }
-.contact_page h1{
-    text-align: center;
-    color: #D5CE50;
+.background{
+	background-color: #D5CE50;
+	width: 1352px;
+	height: 600px;
+	z-index: 1;
+	text-align: center;
+	color: white;
+    margin: 0px;
 }
-.contact_text_container{
-    color: black;
-    display: flex;
+.background h1{
+    padding-top: 150px;
+    font-size: 32px;
 }
-.contact_container{
-    width: 500px;
-    height: 100px;
-    margin-left: 350px;
-  
+.background2{
+	background-color: black;
+	width: 900px;
+	height: 400px;
+	z-index: 2;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	border: none;
+	border-radius: 20px;
+	margin-top: 100px;
 }
-.main_contact_page{
-    text-align: center;
-    color: #D5CE50;
+.container_img{
+	display: flex;
+	flex-wrap: wrap;
 }
-.contract_container1{
-    width: 300px;
-    height: 100px;
-    margin-left: 450px;
-    
+.content_img{
+	width: 50px;
+	height: 50px;
+	border-radius: 150px;
+	border: none;
+	background-color: #D5CE50;
+	margin: 20px;
+	align-items: center;
+	padding: 20px;
+	margin-left: auto;
+	margin-right: auto;
 }
-.contact_footer{
-    color: black;
-    text-align: center;
-    margin-top: 50px;
-    margin-left: 350px;
+.container_img img{
+	width: 25px;
+	height: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
 }
-.contract{
-    margin-left: 20px;
+.container_txt{
+	display: flex;
+	flex-wrap: wrap;
+}
+.content_txt{
+	width: 125px;
+	height: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-left: 75px;
+}
+.content_txt p{
+	font-size: 14px;
 }
 /* Основний стиль для календаря */
 .Main_calendar{
@@ -467,7 +495,6 @@ input {
 .calendar {
     width: 300px;
     margin: 0 auto;
-    font-family: Arial, sans-serif;
 }
 .calendar-header {
     display: flex;
@@ -482,6 +509,7 @@ input {
     background: #D5CE50;
     border: none;
     border-radius: 50px;
+    height: 50px;
     font-size: 20px;
     color: #fff;
     cursor: pointer;
